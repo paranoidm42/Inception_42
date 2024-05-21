@@ -22,7 +22,7 @@ services:
     image: nginx
     container_name: nginx
     volumes:
-      - wordpress:/var/www/wordpress
+      - wordpress:/var/www/html
     networks:
       - inception
     depends_on:
@@ -39,7 +39,7 @@ services:
     image: wordpress
     container_name: wordpress
     volumes:
-    - wordpress:/var/www/wordpress
+    - wordpress:/var/www/html
     networks:
       - inception
     build: 
@@ -58,10 +58,10 @@ volumes:
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/home/lelouch/data/wordpress'
+      device: '/home/ccur/data/wordpress'
   mariadb:
     driver: local
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/home/lelouch/data/mariadb'
+      device: '/home/ccur/data/mariadb'

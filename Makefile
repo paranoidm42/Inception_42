@@ -1,8 +1,8 @@
 DC := docker-compose -f ./srcs/docker-compose.yml
 
 all:
-	@mkdir -p /home/data/wordpress
-	@mkdir -p /home/data/mysql
+	@mkdir -p /home/ccur/data/wordpress
+	@mkdir -p /home/ccur/data/mariadb
 	@$(DC) up -d --build
 
 down:
