@@ -17,6 +17,8 @@ services:
     restart: always
     expose:
       - "3306"
+    stdin_open: true 
+    tty: true
 
   nginx:
     image: nginx
@@ -34,6 +36,8 @@ services:
     restart: always
     ports:
       - "443:443"
+    stdin_open: true 
+    tty: true
 
   wordpress:
     image: wordpress
@@ -51,6 +55,8 @@ services:
     restart: always
     expose: 
       - "9000"
+    stdin_open: true 
+    tty: true
 
 volumes:
   wordpress:
