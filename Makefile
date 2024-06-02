@@ -6,7 +6,11 @@ all:
 	@$(DC) up -d --build
 
 down:
-	@$(DC) down
+	@$(DC) down	
+
+up:
+	@$(DC) up -d
+
 
 re: clean all
 
