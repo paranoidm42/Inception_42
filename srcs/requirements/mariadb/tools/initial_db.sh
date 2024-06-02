@@ -15,6 +15,6 @@ else
   echo "Something went wrong but don't wory if wordpress work!!"
 fi
 
-
+kill $(cat /var/run/mysqld/mysqld.pid)
 
 mysqld
