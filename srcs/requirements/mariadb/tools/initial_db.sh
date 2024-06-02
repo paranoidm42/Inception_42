@@ -16,7 +16,5 @@ else
 fi
 
 
-kill $(cat /var/run/mysqld/mysqld.pid)
-
 
 mysqld
